@@ -1,0 +1,141 @@
+.wrapper {
+    max-width: 450px;
+    width: 100%;
+    min-width: 360px;
+    border-radius: 8%;
+    height: 575px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .45);
+    position: relative;
+    margin-left: 5%;
+    gap: 50px;
+}
+
+.settings {
+    margin-top: 10px;
+    position: relative;
+    width: 90%;
+    font-size: 30px;
+    height: 40px;
+
+}
+
+.deleteBtn {
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.deleteBtn span {
+    position: absolute;
+    line-height: 30px;
+    font-size: 40px;
+    top: -5px;
+    left: 5px;
+}
+
+.deleteBtn:hover {
+    background-color: rgba(117, 111, 129, 0.6);
+}
+
+.elements {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.location {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.locationIcon {
+    margin-left: 10%;
+    width: 100px;
+    height: 100px;
+
+}
+
+.locationIcon img {
+    width: 100%;
+    height: 100%;
+}
+
+.locationInfo {
+    width: auto;
+    text-align: center;
+}
+
+.locationInfoText {
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.temp {
+    display: flex;
+}
+
+.mainTemp {
+    font-size: 160px;
+    line-height: 160px;
+}
+
+.mainDegrees {
+}
+
+.mainDescription {
+    width: 100%;
+    text-align: center;
+}
+
+.cardWeather {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.cardWeatherColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.weatherInf {
+    align-items: center;
+    display: flex;
+    min-width: 130px;
+    width: 100%;
+}
+
+.weatherSeparator {
+    height: 100%;
+    line-height: 100%;
+    border: 1px solid white;
+}
+
+.weatherInf img {
+    height: 100%;
+    width: 25px;
+    margin-right: 10px;
+}
