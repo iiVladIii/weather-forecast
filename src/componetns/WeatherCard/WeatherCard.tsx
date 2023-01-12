@@ -22,7 +22,7 @@ interface WeatherCardProps {
 const WeatherCard: FC<WeatherCardProps> = ({cityName, deleteCard}) => {
     const {data: city, error, isLoading} = cityApi.useFetchCityByNameQuery(`${cityName}`)
 
-    const [iconIndex, setIconIndex] = useState(0)
+    const [iconIndex, setIconIndex] = useState(Math.floor(Math.random() * 6))
     const icons = ['01d', '02d', '03d', '04d', '09d', '10d', '11d', '13d']
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
@@ -32,9 +32,8 @@ const WeatherCard: FC<WeatherCardProps> = ({cityName, deleteCard}) => {
 
     useEffect(() => {
         if (city)
-            setIconIndex(icons.findIndex(ic => ic === city.weather[0].icon))
-        if (iconIndex === -1) setIconIndex(0)
-
+            if (-1 !== icons.findIndex(ic => ic === city.weather[0].icon))
+                setIconIndex(icons.findIndex(ic => ic === city.weather[0].icon))
     }, [city])
 
     useEffect(() => {
