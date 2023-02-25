@@ -24,6 +24,10 @@ header {
     margin-left: 20px;
 }
 
+.headerNameTitle a {
+    text-decoration: none;
+}
+
 .headerNameSvg {
     height: 50px;
     width: 50px;

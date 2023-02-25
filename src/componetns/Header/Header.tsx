@@ -8,7 +8,7 @@ const Header = () => {
             <div className={cl.headerContent}>
                 <div className={cl.headerName}>
                     <div className={cl.headerNameSvg}><img src={logo} alt=""/></div>
-                    <div className={cl.headerNameTitle}>Weather by VladI</div>
+                    <div className={cl.headerNameTitle}><a href="https://rovlweb.ru/">Weather by Rovl Web</a></div>
                 </div>
                 {/*<nav>*/}
                 {/*    <a href="/weather" className={cl.navLinks}>GitHub</a>*/}
